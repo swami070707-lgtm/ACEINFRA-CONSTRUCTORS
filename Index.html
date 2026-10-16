@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACEINFRA CONSTRUCTORS PEB LLP | Pre-Engineered Buildings & Roofing Manufacturer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#ea580c',
+                            600: '#c2410c',
+                            700: '#9a3412',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- GSAP Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        /* Fixed Background Watermark/Texture for Entire Site */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: img src=('C:\Users\patel\Desktop\html\ACE\background.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: grayscale(100%) contrast(120%);
+            opacity: 0.05; /* Transparent Black & White PEB Structure */
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .font-logo {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white relative">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors py-2">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            
+            <!-- Exact Logo matching the Business Card -->
+            <a href="#home" class="flex flex-col items-center justify-center text-center group py-1">
+                <a href="#home" class="flex flex-col items-center justify-center text-center group py-1">
+    <!-- नवीन इमेज लोगो -->
+    <img src="logo-Photoroom.png" alt="ACEINFRA Logo" class="h-10 w-auto transition-transform duration-300 group-hover:scale-105">
+    
+    <span class="text-xl sm:text-2xl font-black tracking-normal text-slate-900 dark:text-white leading-none font-logo mt-1 uppercase">ACEINFRA</span>
+
+
+                <span class="text-[9px] sm:text-[10px] tracking-wider text-slate-900 dark:text-slate-200 font-extrabold uppercase leading-tight mt-0.5">CONSTRUCTORS PEB LLP<br>STRUCTURAL BUILDINGS</span>
+                <span class="text-[7px] sm:text-[8px] tracking-[0.2em] text-slate-600 dark:text-slate-400 font-bold uppercase leading-none"></span>
+            
+            <!-- Navigation Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                <a href="#home" class="hover:text-brand-500 transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
+                <a href="#capabilities" class="hover:text-brand-500 transition-colors">Capabilities</a>
+                <a href="#gallery" class="hover:text-brand-500 transition-colors">Gallery</a>
+                <a href="#contact" class="hover:text-brand-500 transition-colors">Contact Us</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleTheme()" id="themeToggleBtn" aria-label="Toggle Theme" class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-yellow-400 flex items-center justify-center transition-all hover:scale-105 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-32 pb-16 px-6 relative">
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 dark:bg-brand-500/10 border border-brand-100 dark:border-brand-500/20 text-brand-500 text-xs font-bold tracking-wider uppercase">
+                    <i class="fa-solid fa-building"></i> Structural Buildings & Manufacturing
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
+                    ACEINFRA <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-amber-500">CONSTRUCTORS PEB LLP</span>
+                </h1>
+                <p class="text-slate-600 dark:text-slate-300 text-lg max-w-xl font-normal leading-relaxed">
+                    We Aceinfra Constructors Are The Manufacturers Of Pre-engineered Buildings As Well As Conventional Super Structures. We Have Our Manufacturing Unit In I Acre Area Based At Pune. Inhouse Blasting And Painting Facility Is Available.All Types Of Pre-engineered Buildings, Structural Conventional Buildings, Standing Seam Roofing Manufacturer.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-brand-500/25 flex items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Get Quick Quote</span>
+                    </a>
+                    <!-- Direct Pre-filled WhatsApp Inquiry Link -->
+                    <a href="https://wa.me/919028442588?text=Hello%20Sourabh%20Arvind%20Mukate%2C%20I%20want%20to%20inquire%20about%20Pre-Engineered%20Buildings%20and%20Roofing%20Services." target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-emerald-600/25 flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200 dark:border-slate-800 p-4 rounded-3xl relative overflow-hidden shadow-xl">
+                    <img src="3.jpeg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights -->
+    <section class="border-y border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70 backdrop-blur-sm py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-2xl md:text-4xl font-extrabold text-brand-500 mb-1">PEB</h3>
+                <p class="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">Pre-Engineered Buildings</p>
+            </div>
+            <div>
+                <h3 class="text-2xl md:text-4xl font-extrabold text-brand-500 mb-1">STEEL</h3>
+                <p class="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">Conventional Structures</p>
+            </div>
+            <div>
+                <h3 class="text-2xl md:text-4xl font-extrabold text-brand-500 mb-1">ROOFING</h3>
+                <p class="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">Standing Seam Roofing</p>
+            </div>
+            <div>
+                <h3 class="text-2xl md:text-4xl font-extrabold text-brand-500 mb-1">PUNE</h3>
+                <p class="text-xs uppercase tracking-wider text-slate-600 dark:text-slate-400 font-bold">Ambethan, Khed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-100/50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80" alt="Steel Manufacturing Plant" class="w-full h-[400px] object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-brand-500 text-white p-6 rounded-2xl shadow-xl hidden sm:block">
+                    <p class="text-2xl font-black font-logo">EXCELLENCE</p>
+                    <p class="text-xs font-bold uppercase tracking-wider opacity-90">In Structural Engineering</p>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <span class="text-brand-500 text-xs font-extrabold tracking-widest uppercase bg-brand-50 dark:bg-brand-500/10 px-3 py-1.5 rounded-md border border-brand-100 dark:border-brand-500/20">About Aceinfra</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                    Engineering Strong Foundations for Industrial Growth
+                </h2>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
+                    ACEINFRA CONSTRUCTORS PEB LLP is a premier manufacturing and construction leader based in Ambethan, Khed, Pune. Under the expert guidance of <strong class="text-slate-900 dark:text-white">Sourabh Arvind Mukate (M.E. Civil - Construction Management)</strong>, we specialize in high-precision Pre-Engineered Buildings (PEB), structural steel conventional buildings, and standing seam roofing systems.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                        <i class="fa-solid fa-check-circle text-brand-500 text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm">Precision Design</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Advanced structural analysis & engineering workflows.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+                        <i class="fa-solid fa-check-circle text-brand-500 text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm">Quality Manufacturing</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Durable raw materials and rigorous testing standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="py-24 px-6 bg-white/80 dark:bg-slate-950/80">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-brand-500 text-xs font-extrabold tracking-widest uppercase bg-brand-50 dark:bg-brand-500/10 px-3 py-1.5 rounded-md border border-brand-100 dark:border-brand-500/20">Our Core Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Specialized Structural Solutions</h2>
+                <p class="text-slate-600 dark:text-slate-300">We offer end-to-end solutions from design and manufacturing to on-site erection.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Capability 1 -->
+                <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl transition-all hover:-translate-y-1 shadow-sm group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white mb-3">Pre-Engineered Buildings (PEB)</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Custom-designed PEB structures engineered for warehouses, factories, aircraft hangars, and commercial complexes with maximum span efficiency.
+                    </p>
+                </div>
+
+                <!-- Capability 2 -->
+                <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl transition-all hover:-translate-y-1 shadow-sm group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white mb-3">Structural Conventional Buildings</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Robust conventional steel framed structures built for heavy industrial loads, multi-story plants, and specialized infrastructural requirements.
+                    </p>
+                </div>
+
+                <!-- Capability 3 -->
+                <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-3xl transition-all hover:-translate-y-1 shadow-sm group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-roofing"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold text-slate-900 dark:text-white mb-3">Standing Seam Roofing Manufacturer</h3>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                        Weather-tight, leak-proof standing seam standing profile roof systems manufactured in-house for supreme durability and thermal insulation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-6 bg-slate-100/50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="text-brand-500 text-xs font-extrabold tracking-widest uppercase bg-brand-50 dark:bg-brand-500/10 px-3 py-1.5 rounded-md border border-brand-100 dark:border-brand-500/20">Project Gallery</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Our Industrial Work Showcase</h2>
+                <p class="text-slate-600 dark:text-slate-300">A glimpse into our manufactured structures and completed structural engineering projects.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
+                    <img src="5.jpeg" alt="Industrial PEB Shed" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-bold text-sm">Industrial PEB Manufacturing Shed</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
+                    <img src="1.jpeg" alt="Structural Steel Frame" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-bold text-sm">Structural Steel Framework</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-3xl overflow-hidden shadow-md aspect-[4/3]">
+                    <img src="C:2.jpeg" alt="Standing Seam Roofing" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-white font-bold text-sm">Standing Seam Roofing Installation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+            
+            <!-- Contact Info & Quick Action Cards -->
+            <div class="space-y-6">
+                <span class="text-brand-500 text-xs font-extrabold tracking-widest uppercase bg-brand-50 dark:bg-brand-500/10 px-3 py-1.5 rounded-md border border-brand-100 dark:border-brand-500/20">Contact Us</span>
+                
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">Sourabh Arvind Mukate</h2>
+                    <p class="text-brand-500 font-bold text-base mt-1">M. E. Civil (CM) &bull; Managing Partner</p>
+                </div>
+
+                <!-- Call & Contact Cards Grid -->
+                <div class="space-y-4 pt-2">
+                    
+                    <!-- Call Details Card -->
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 hover:border-brand-500/50 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md shadow-brand-500/20">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 dark:text-white block font-bold text-xs uppercase tracking-wider text-slate-500">Call Us Direct</strong>
+                                <a href="tel:+919028442588" class="text-lg text-slate-900 dark:text-white font-extrabold hover:text-brand-500 transition-colors">+91 9028442588</a>
+                            </div>
+                        </div>
+                        <a href="tel:+919028442588" class="bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 shrink-0">
+                            <i class="fa-solid fa-phone-flip"></i>
+                            <span>Call</span>
+                        </a>
+                    </div>
+
+                    <!-- WhatsApp Contact Card -->
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-colors">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md shadow-emerald-600/20">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <strong class="text-slate-900 dark:text-white block font-bold text-xs uppercase tracking-wider text-slate-500">Instant Chat</strong>
+                                <a href="https://wa.me/919028442588?text=Hello%20Sourabh%20Arvind%20Mukate%2C%20I%20want%20to%20inquire%20about%20Pre-Engineered%20Buildings." target="_blank" rel="noopener noreferrer" class="text-lg text-slate-900 dark:text-white font-extrabold hover:text-emerald-500 transition-colors">+91 9028442588</a>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/919028442588?text=Hello%20Sourabh%20Arvind%20Mukate%2C%20I%20want%20to%20inquire%20about%20Pre-Engineered%20Buildings." target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat</span>
+                        </a>
+                    </div>
+
+                    <!-- Email Address Card -->
+                    <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md shadow-brand-500/20">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong class="text-slate-900 dark:text-white block font-bold text-xs uppercase tracking-wider text-slate-500">Email Address</strong>
+                            <a href="mailto:pebaceinfrastruct@gmail.com" class="text-base text-slate-800 dark:text-slate-200 font-bold hover:text-brand-500 transition-colors">pebaceinfrastruct@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Factory / Office Location Card -->
+                    <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-50/80 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-brand-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md shadow-brand-500/20">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <strong class="text-slate-900 dark:text-white block font-bold text-xs uppercase tracking-wider text-slate-500">Office & Works Location</strong>
+                            <span class="text-sm text-slate-700 dark:text-slate-300 font-semibold block">QR98+CHR, Mahalunge, Ambethan, Khed, Pune, Maharashtra 410501</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Action Button Row near map -->
+                <div class="pt-2 flex flex-wrap gap-4">
+                    <a href="tel:+919028442588" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-brand-500/25 flex items-center gap-3 text-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call +91 9028442588</span>
+                    </a>
+                    <a href="https://maps.google.com/?cid=4594989520036073574" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-900 text-white px-6 py-3.5 rounded-xl font-bold transition-all shadow-lg shadow-slate-900/25 flex items-center gap-3 text-sm">
+                        <i class="fa-solid fa-route"></i>
+                        <span>Get Driving Directions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed Section -->
+            <div class="space-y-4">
+                <div class="bg-white/80 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 p-3 rounded-3xl overflow-hidden shadow-lg">
+                    <!-- Configured Google Maps iframe centered at Ambethan, Khed, Pune -->
+                    <iframe 
+                        title="ACEINFRA CONSTRUCTORS PEB LLP Google Location Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.6811559816654!2d73.83182637596001!3d18.74811206292359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b80f74577f8d%3A0x6b2b4d1b82736173!2sACEINFRA%20CONSTRUCTORS%20PEB%20LLP!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                        class="w-full h-[400px] sm:h-[450px] rounded-2xl border-0 filter dark:invert dark:hue-rotate-180 dark:contrast-125" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="flex items-center justify-between px-2 text-xs text-slate-500 dark:text-slate-400">
+                    <span class="flex items-center gap-1.5"><i class="fa-solid fa-map-pin text-brand-500"></i> Mahalunge - Ambethan Rd, Khed, Pune</span>
+                    <a href="https://maps.google.com/?cid=4594989520036073574" target="_blank" rel="noopener noreferrer" class="text-brand-500 hover:underline font-bold">Open in Google Maps &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <p class="text-white font-bold text-sm font-logo tracking-wider">ACEINFRA CONSTRUCTORS PEB LLP</p>
+                <p class="text-xs text-slate-500 mt-1">Pre-Engineered Buildings & Standing Seam Roofing Manufacturers &bull; Ambethan, Pune.</p>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2026 ACEINFRA CONSTRUCTORS PEB LLP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Switcher Script -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.className = 'fa-solid fa-moon text-sm';
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.className = 'fa-solid fa-sun text-sm text-yellow-400';
+            }
+        }
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.getElementById('themeIcon').className = 'fa-solid fa-sun text-sm text-yellow-400';
+        }
+    </script>
+</body>
+</html>
